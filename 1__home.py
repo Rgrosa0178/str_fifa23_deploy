@@ -20,13 +20,12 @@ st.sidebar.markdown(
     'Desenvolvido por [https://www.instagram.com/rodrigoguirosa/] Rodrigo Guimarães Rosa')
 
 # cria botão para acessar páginas
-btn = st.button('Acesse os dados no Kaggle')
-# quando clicar botão será direcionado para a pagina descrita
-if btn:
-    webbrowser.open_new_tab(
-        'https://www.kaggle.com/datasets/bryanb/fifa-player-stats-database')
+btn = st.link_button(
+    'Acesse os dados no Kaggle',
+    'https://www.kaggle.com/datasets/bryanb/fifa-player-stats-database'
+)
 
-
+# cria o texto na página
 st.markdown(
     """
  O conjunto de dados
