@@ -2,7 +2,7 @@ import streamlit as st
 import webbrowser
 import pandas as pd
 from datetime import datetime
-
+import openai
 # para carregar os dados do df. esse if significa que se não há dados no sessio state, executa os filtros
 if 'data' not in st.session_state:
     df_data = pd.read_csv(
